@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Projet RLI</title>
+
+    <!-- CSS FILES -->        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">                  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet">   
+    <link href="css/custom-crc.css" rel="stylesheet">   
+    <link rel="stylesheet" href="frame.css">
+</head>
+    
+<body id="top">
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi-back"></i>
+                    <span>Controller Area Network</span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calcul_crc.html">Calculate CRC</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="simulate_com.html">Simulate Communication</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#section_2">Team</a>
+                        </li>
+
+                     
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="index.html" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="white-window">
+                            <h1 class="text-black text-center smaller-font">Simulate Frame Communication</h1> 
+                            <form id="crcForm" class="text-center">
+                                <div class="form-group text-left">
+                                    <label for="id" class="form-label smaller-label">Sender Id :</label> 
+                                    <input type="text" id="id" name="id" class="form-control smaller-input" placeholder="ID"> 
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="data" class="form-label smaller-label">Data :</label> 
+                                    <input type="text" id="data" name="data" class="form-control smaller-input" placeholder="Data Binary"> 
+                                </div>
+                                <button type="submit" class="btn btn-primary stylish-btn">Visualize Data Frame</button>
+                            </form>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crc/3.4.4/crc.min.js"></script>
+    <script src="js/frame.js"></script>
+    
+
+
+</body>
+</html>

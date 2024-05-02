@@ -1,0 +1,59 @@
+/* custom-crc.css */
+
+/* Style pour la fenêtre blanche */
+.white-window {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style pour le titre 'Calcul CRC' */
+.white-window h1 {
+    color: #000000; /* Noir */
+    font-size: 24px; /* Taille de police plus petite */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style pour le formulaire */
+.white-window form {
+    margin-bottom: 20px;
+}
+
+/* Style pour les labels */
+.white-window .form-label {
+    display: inline-block; /* Alignement en ligne pour les labels */
+    width: 150px; /* Largeur fixe pour les labels */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.white-window .form-control {
+    width: calc(100% - 170px); 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+.white-window .btn-primary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.white-window .btn-primary:hover {
+    background-color: #0056b3; 
+}
